@@ -36,7 +36,7 @@ client.on('message', msg => {
   if (msg.content === '++nothing') {
 
 
-    msg.channel.send("c'est enuyant", {files: ["./images/sans-titre.png"]})
+    channel.send("c'est enuyant", {files: ["./images/sans-titre.png"]})
   }
 
 
