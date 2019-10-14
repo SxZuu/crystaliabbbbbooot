@@ -7,6 +7,12 @@ const fs = require("fs");
 
 
 
+const exampleEmbed = new Discord.RichEmbed()
+  .setColor('#0099ff')
+  .setTitle('Aide')
+  .setThumbnail('https://cdn.discordapp.com/attachments/632225139739721729/632225597619306497/sans-titre-1.jpg')
+  .addField("_commandes miscelanous_", "++ping - affiche pong.\n")
+  .addField("_commandes admin_", "++ kick permet d'expulser le membre mentioné")
 
 
 
@@ -35,16 +41,7 @@ client.on('message', msg => {
 
   if (msg.content === '++help') {
 
-    const helppp = new Discord.RichEmbed()
-  .setColor('#0099ff')
-  .setTitle('Aide')
-  .setThumbnail('https://cdn.discordapp.com/attachments/632225139739721729/632225597619306497/sans-titre-1.jpg')
-  .addField("_**commandes miscelanous**_", "++ping - affiche pong.\n ++nothing affiche un gif enuyant")
-  .addField("_**commandes admin**_", "++ kick permet d'expulser le membre mentioné")
-  .addField("_**Commandes utiles**_", "++help c'est ici cher ami ^^", "soon ++rank")
-  .addField("_**commandes de jeux**_", "soon")
-
-  msg.channel.send(helppp);
+  msg.channel.send(exampleEmbed);
 
   }
   client.on ("guildMemberAdd", member =>{
@@ -106,4 +103,4 @@ client.on('message', msg => {
 
 
 
-client.login(process.env.TOKEN);
+client.login('process.env.TOKEN');
