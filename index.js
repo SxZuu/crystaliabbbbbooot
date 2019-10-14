@@ -36,13 +36,13 @@ client.on('message', msg => {
   if (msg.content === '++nothing') {
 
 
-    channel.send("c'est enuyant", {files: ["./images/sans-titre.png"]})
+    msg.channel.send("c'est enuyant", {files: ["./images/sans-titre.png"]})
   }
 
 
   if (msg.content === '++help') {
 
-  msg.channel.send(exampleEmbed);
+  channel.send(exampleEmbed);
 
   }
   client.on ("guildMemberAdd", member =>{
