@@ -103,4 +103,4 @@ client.on('message', msg => {
 
 
 
-client.login('NjMyMTkwNjY0MTk2NzUxNDAw.XaSjKw.M59BeQp-tG6-15w0Qd7GCfLqtpE');
+client.login(process.env.TOKEN);
