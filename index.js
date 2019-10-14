@@ -3,8 +3,6 @@ const client = new Discord.Client();
 let xp = require("./xp.json");
 
 const fs = require("fs");
-let coin = require("./coin.json");
-
 
 
 const exampleEmbed = new Discord.RichEmbed()
