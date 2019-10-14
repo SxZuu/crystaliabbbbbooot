@@ -44,7 +44,7 @@ client.on('message', msg => {
 
   if (msg.content === '++help') {
 
-  msg.author.sendMessage(exampleEmbed);
+  msg.channel.send(exampleEmbed);
 
   }
   client.on ("guildMemberAdd", member =>{
