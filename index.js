@@ -5,14 +5,7 @@ let xp = require("./xp.json");
 const fs = require("fs");
 
 
-const exempleEmbed = new Discord.RichEmbed()
-  .setColor('#0099ff')
-  .setTitle('Aide')
-  .setThumbnail('https://cdn.discordapp.com/attachments/632225139739721729/632225597619306497/sans-titre-1.jpg')
-  .addField("_**commandes miscelanous**_", "++ping - affiche pong.\n ++nothing affiche un gif enuyant")
-  .addField("_**commandes admin**_", "++ kick permet d'expulser le membre mentioné")
-  .addField("_**Commandes utiles**_", "++help c'est ici cher ami ^^", "soon ++rank")
-  .addField("_**commandes de jeux**_", "soon")
+
 
 
 
@@ -42,7 +35,16 @@ client.on('message', msg => {
 
   if (msg.content === '++help') {
 
-   msg.channel.send(`${exampleEmbed}`);
+    const helppp = new Discord.RichEmbed()
+  .setColor('#0099ff')
+  .setTitle('Aide')
+  .setThumbnail('https://cdn.discordapp.com/attachments/632225139739721729/632225597619306497/sans-titre-1.jpg')
+  .addField("_**commandes miscelanous**_", "++ping - affiche pong.\n ++nothing affiche un gif enuyant")
+  .addField("_**commandes admin**_", "++ kick permet d'expulser le membre mentioné")
+  .addField("_**Commandes utiles**_", "++help c'est ici cher ami ^^", "soon ++rank")
+  .addField("_**commandes de jeux**_", "soon")
+
+  msg.channel.send(helppp);
 
   }
   client.on ("guildMemberAdd", member =>{
