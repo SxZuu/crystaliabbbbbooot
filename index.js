@@ -5,7 +5,7 @@ let xp = require("./xp.json");
 const fs = require("fs");
 
 
-const aaexampleEmbed = new Discord.RichEmbed()
+const exempleEmbed = new Discord.RichEmbed()
   .setColor('#0099ff')
   .setTitle('Aide')
   .setThumbnail('https://cdn.discordapp.com/attachments/632225139739721729/632225597619306497/sans-titre-1.jpg')
@@ -42,7 +42,7 @@ client.on('message', msg => {
 
   if (msg.content === '++help') {
 
-  msg.channel.send(aahelp);
+   msg.channel.send(exampleEmbed);
 
   }
   client.on ("guildMemberAdd", member =>{
