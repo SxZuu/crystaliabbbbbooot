@@ -99,8 +99,17 @@ client.on('message', msg => {
       });
       console.log(`le niveau est de ${xp[msg.author.id].level}`);
 
+      if(msg.content === '++pornhub'){
+        msg.channel.send("tu tu tu tou tou tou tu", {files: ["./images/pornhub.png"]});
+      }
+
+      if(msg.content === '++ez'){
+        msg.channel.send("ez", {files: ["./images/ez.jpeg"]});
+      }
+
 });
 
 
 
-client.login(process.env.TOKEN);
+
+client.login('NjIxMTEzMTI5MDQ0Mjc5MzQ4.XbcrBw.tH8Mz3N2Lzby1RzWUmKgzoSY3a0');
